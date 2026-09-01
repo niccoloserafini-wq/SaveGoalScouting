@@ -1,1 +1,60 @@
-# SaveGoalScouting
+# 🧤 GK Scout Pro - Goalkeeper Scouting Platform
+
+**GK Scout Pro** è una piattaforma web professionale progettata per la raccolta dati, la valutazione atletica e l'analisi prestazionale dei portieri di calcio. Il progetto è ottimizzato come applicazione web statica leggera, altamente accessibile e pronta per l'hosting gratuito tramite **GitHub Pages**.
+
+---
+
+## 🎯 Obiettivi del Progetto
+
+Il sistema offre a scout, preparatori dei portieri e match analyst una struttura dati centralizzata per monitorare l'evoluzione fisica e tecnica dell'atleta durante l'arco della stagione sportiva.
+
+---
+
+## 📐 Struttura dell'Applicazione
+
+La piattaforma è articolata in **4 Macro-Sezioni**:
+
+1. **📋 Profilo (Attiva):**
+   - **Dati Anagrafici & Sportivi:** Nome, data di nascita, nazionalità, squadra, categoria, numero di maglia e piede dominante.
+   - **Dati Antropometrici:** Altezza, peso, apertura alare (*wingspan*), reach da fermo, lunghezze segmentarie e circonferenze muscolari.
+   - **Calcolo Dinamico BMI:** Calcolo automatico e istantaneo dell'indice di massa corporea con classificazione dello stato nutrizionale.
+
+2. **🏋️ Valutazione Fisica (In sviluppo):**
+   - Monitoraggio dei test atletici e di forza strutturati in tre finestre stagionali: *Settembre*, *Gennaio* e *Fine Stagione*.
+
+3. **⚽ Stagione & Partite (In sviluppo):**
+   - Registro presenze, minutaggio e rilevazione degli eventi chiave di gara (parate, uscite, gol subiti, rigori, passaggi riusciti).
+
+4. **📊 Dashboard & Report (In sviluppo):**
+   - Grafici dinamici, dati radar, trend di rendimento e schede di valutazione finale esportabili.
+
+---
+
+## 🛠️ Tecnologie Utilizzate
+
+- **HTML5:** Struttura semantica ed accessibile.
+- **CSS3:** Design responsive moderno con CSS Variables, Flexbox e Grid (zero dipendenze esterne o framework pesanti).
+- **JavaScript (Vanilla):** Logica client-side leggera per il calcolo dinamico delle metriche antropometriche.
+
+---
+
+## 🚀 Come Pubblicare su GitHub Pages
+
+1. **Clona o Carica i file:**
+   Assicurati che il file principale si chiami **`index.html`** e sia posizionato nella radice (*root*) del repository.
+
+2. **Attiva GitHub Pages:**
+   - Vai nella sezione **Settings** del tuo repository su GitHub.
+   - Nel menu a sinistra, clicca su **Pages**.
+   - Sotto **Build and deployment** $\rightarrow$ **Branch**, seleziona `main` (o `master`) e lascia la cartella su `/ (root)`.
+   - Clicca su **Save**.
+
+3. **Accedi al Sito:**
+   Dopo circa 1-2 minuti, il tuo sito sarà raggiungibile all'indirizzo:
+   `https://<tuo-nome-utente>.github.io/<nome-repository>/`
+
+---
+
+## 📝 Licenza e Note
+
+Sviluppato per uso analitico e di scouting sportivo professionale.
