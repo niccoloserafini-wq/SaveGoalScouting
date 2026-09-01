@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goalkeeper Scouting Platform - Profilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigazione Principale a 4 Sezioni -->
+    <header class="navbar">
+        <div class="brand">
+            <span class="logo-icon">🧤</span> GK SCOUT PRO
+        </div>
+        <nav class="nav-menu">
+            <a href="#profilo" class="nav-link active">1. Profilo</a>
+            <a href="#valutazione" class="nav-link disabled">2. Valutazione Fisica</a>
+            <a href="#stagione" class="nav-link disabled">3. Stagione & Partite</a>
+            <a href="#dashboard" class="nav-link disabled">4. Dashboard & Report</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Banner Intestazione Portiere -->
+        <section class="player-header">
+            <div class="player-avatar">
+                <span>GK</span>
+            </div>
+            <div class="player-main-info">
+                <div class="jersey-number">#1</div>
+                <div class="name-block">
+                    <h1>Marco Rossi</h1>
+                    <p class="subtitle">Portiere | AC Milan (U19) | Stagione 2025/2026</p>
+                </div>
+            </div>
+            <div class="quick-status">
+                <span class="badge badge-success">Attivo</span>
+                <span class="badge">Piede: Destro</span>
+            </div>
+        </section>
+
+        <!-- Griglia Dati Profilo -->
+        <section class="grid-section">
+            
+            <!-- Scheda 1: Dati Anagrafici -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Dati Anagrafici & Sportivi</h2>
+                </div>
+                <div class="card-body data-grid">
+                    <div class="data-item">
+                        <span class="label">Nome</span>
+                        <span class="value">Marco</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Cognome</span>
+                        <span class="value">Rossi</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Data di Nascita</span>
+                        <span class="value">14/05/2006</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Età</span>
+                        <span class="value">19 anni</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Nazionalità</span>
+                        <span class="value">🇮🇹 Italiana</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Piede Dominante</span>
+                        <span class="value">Destro</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Squadra di Appartenenza</span>
+                        <span class="value">AC Milan</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Categoria</span>
+                        <span class="value">Primavera 1</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Stagione Agonistica</span>
+                        <span class="value">2025 / 2026</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Numero di Maglia</span>
+                        <span class="value">#1</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scheda 2: Dati Antropometrici -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Profilo Antropometrico</h2>
+                </div>
+                <div class="card-body data-grid">
+                    <div class="data-item highlight">
+                        <span class="label">Altezza</span>
+                        <span class="value"><input type="number" id="height" value="191" oninput="calculateBMI()"> cm</span>
+                    </div>
+                    <div class="data-item highlight">
+                        <span class="label">Peso</span>
+                        <span class="value"><input type="number" id="weight" value="84" oninput="calculateBMI()"> kg</span>
+                    </div>
+                    <div class="data-item highlight-bmi">
+                        <span class="label">BMI (Indice Corporeo)</span>
+                        <span class="value" id="bmi-value">23.0</span>
+                        <span class="bmi-status" id="bmi-status">Normopeso</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Apertura Alare (Wingspan)</span>
+                        <span class="value">196 cm</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Reach da Fermo (Braccia In Alto)</span>
+                        <span class="value">252 cm</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Lunghezza Gamba</span>
+                        <span class="value">98 cm</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Circonferenza Torace</span>
+                        <span class="value">104 cm</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Circonferenza Braccio</span>
+                        <span class="value">34 cm</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Circonferenza Coscia</span>
+                        <span class="value">58 cm</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
